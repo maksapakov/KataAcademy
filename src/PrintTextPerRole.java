@@ -6,7 +6,7 @@ public static String printTextPerRole(String[] roles, String[] textLines) {
         textPerRole.append(role).append(":\n");
         for (int j = 0; j < textLines.length; j++) {
             if (textLines[j].startsWith(role.concat(":"))) {
-                textPerRole.append(textLines[j].replace(role + ": ", j + 1 + ") ").replace("\n", "") + "\n");
+                textPerRole.append(textLines[j].replace(role + ": ", j + 1 + ") ").replace("\n", "")).append("\n");
             }
         }
     }
